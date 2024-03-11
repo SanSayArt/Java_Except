@@ -25,7 +25,7 @@ public class ParseData {
                 if (Integer.parseInt(arrayDate[0]) < 0 ||
                         Integer.parseInt(arrayDate[0]) > 31 || Integer.parseInt(arrayDate[1]) < 0 ||
                         Integer.parseInt(arrayDate[1]) > 12 || Integer.parseInt(arrayDate[2]) < 0 ||
-                        Integer.parseInt(arrayDate[1]) > 2022) {
+                        Integer.parseInt(arrayDate[1]) > 2025) {
                     try {
                         throw new NotDateException();
                     } catch (NotDateException e) {
