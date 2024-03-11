@@ -5,7 +5,7 @@ public class ReadData {
         Scanner scan = new Scanner(System.in);
         while(true){
             System.out.println("Введите ФИО, дата рождения, номер телефона и пол разделенные пробелом (Иванов Иван " +
-                    "Иванович 01.01.2000 9009991122 м/ж)");
+                    "Иванович 01.01.2000 9009991122 м (пол указывается буквами \"м\" или \"ж\"))");
             String data = scan.nextLine();
             String[] arrData = data.split(" ");
             if (arrData.length == 6) {
