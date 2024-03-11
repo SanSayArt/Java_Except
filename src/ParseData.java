@@ -10,7 +10,7 @@ public class ParseData {
 
         for (String i : data) {
             if (i.length() == 1) {
-                if (i.equals("женский") || i.equals("мужской")) {
+                if (i.equals("жен") || i.equals("муж")) {
                     dictData.put("sex", i);
                 } else{
                     try {
@@ -91,7 +91,7 @@ public class ParseData {
 
             } else if (i.matches("[0-9]+")) {
                 dictData.put("tel", i);
-            } else if (i.matches("[A-Za-z]+")) {
+            } else if (i.matches("[A-Za-zА-Яа-я]+")) {
                 sb.append(i + " ");
             } else {
                 try {
@@ -104,8 +104,8 @@ public class ParseData {
         String[] fullName = String.valueOf(sb).split(" ");
         if (fullName.length == 3) {
             dictData.put("firstName", fullName[1]);
-            dictData.put("lastName", fullName[0]);
-            dictData.put("patronymic", fullName[2]);
+            dictData.put("surName", fullName[0]);
+            dictData.put("lastName", fullName[2]);
         }
         return dictData;
     }
