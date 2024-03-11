@@ -10,7 +10,7 @@ public class ParseData {
 
         for (String i : data) {
             if (i.length() == 1) {
-                if (i.equals("жен") || i.equals("муж")) {
+                if (i.equals("ж") || i.equals("м")) {
                     dictData.put("sex", i);
                 } else{
                     try {

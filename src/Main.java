@@ -14,7 +14,7 @@ public class Main {
             }
         }
 
-        newFileName = data.get("lastName") + ".txt";
+        newFileName = data.get("surName") + ".txt";
         StringBuilder sb = new StringBuilder();
         for (String str : data.keySet()) {
             sb.append(data.get(str));
